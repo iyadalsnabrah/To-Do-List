@@ -1,0 +1,106 @@
+body {
+    height: 500px;
+    background-image: linear-gradient(to right, rgb(122, 255, 226), rgb(0, 78, 167));
+}
+
+.position {
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    color: white;
+}
+
+.back-color {
+    background-color: rgb(0, 137, 228);
+}
+
+.remove-p {
+    padding: 0;
+}
+
+.add-todo {
+    border: 2px solid rgb(87, 241, 255);
+    padding: 10px;
+    width: 100%;
+}
+
+td,
+th {
+    border: 3px solid #008183;
+    padding: 15px;
+}
+
+td {
+    cursor: pointer;
+}
+
+tr:nth-child(odd) {
+    background-color: #016097;
+}
+
+tr:nth-child(odd):hover {
+    background-color: #45bafd;
+}
+
+tr:nth-child(even) {
+    background-color: #00b0b6;
+}
+
+tr:nth-child(even):hover {
+    background-color: #00dee6;
+}
+
+th .fas {
+    font-size: 1.3em;
+    cursor: pointer;
+    float: right;
+}
+
+
+th .fas:hover {
+    color: rgb(63, 251, 226);
+}
+
+.clear {
+    clear: both;
+}
+
+strike {
+    color: rgb(0, 0, 0)
+}
+
+td .fas{
+    padding: 0 10px;
+}
+td .fas:hover{
+    color: rgb(255, 0, 0);
+}
+
+span{
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	width: 0;
+	transition: 0.2s linear;
+	opacity:0;
+}
+
+td:hover span {
+ 
+	width: 40px;
+	opacity: 1.0;
+}
+@media (max-width:600px){
+    .position {
+        width: 80%;
+      
+    }
+}
